@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta chartype="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Satisfaction Survey</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1 id="title">Satisfaction Survey</h1>
+        <p id="description">
+          Thank you for taking the time to share your feedback—it helps us make
+          The Game even better!
+        </p>
+      </header>
+      <form id="survey-form">
+        <fieldset class="user-data">
+          <label id="name-label"
+            >Name (Required)<input
+              type="text"
+              id="name"
+              required
+              placeholder="First Last"
+          /></label>
+          <label id="email-label"
+            >Email (Required)<input
+              type="email"
+              id="email"
+              required
+              placeholder="example@email.com"
+          /></label>
+          <label id="number-label"
+            >Age<input
+              type="number"
+              id="number"
+              min="13"
+              max="120"
+              placeholder="13-120"
+          /></label>
+        </fieldset>
+
+        <fieldset class="experience">
+          <label
+            >How would you rate your overall experience with The Game?
+            <select id="dropdown">
+              <option value="">Select</option>
+              <option value="5">Excellent</option>
+              <option value="4">Good</option>
+              <option value="3">Average</option>
+              <option value="2">Poor</option>
+              <option value="1">Terrible</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="favorite">
+          <legend>What is your favorite aspect of The Game?</legend>
+          <label
+            ><input
+              type="radio"
+              name="favorite"
+              value="graphics"
+            />Graphics</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="favorite"
+              value="storyline"
+            />Storyline</label
+          >
+          <label
+            ><input type="radio" name="favorite" value="gameplay" />Gameplay
+            mechanics</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="favorite"
+              value="multiplayer"
+            />Multiplayer experience</label
+          >
+          <label
+            ><input type="radio" name="favorite" value="character" />Character
+            design</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            What features would you like to see improved or added in future
+            updates? (Select all that apply)
+          </legend>
+          <label
+            ><input type="checkbox" value="character" />More character
+            customization</label
+          >
+          <label
+            ><input type="checkbox" value="multiplayer" />Enhanced multiplayer
+            options</label
+          >
+          <label
+            ><input type="checkbox" value="storyline" />Additional storyline
+            content</label
+          >
+          <label
+            ><input type="checkbox" value="bug" />Bug fixes and performance
+            improvements</label
+          >
+          <label
+            ><input type="checkbox" value="weapons" />New weapons or gear</label
+          >
+        </fieldset>
+
+        <fieldset class="more">
+          <label>
+            Anything else you want the devs to know?
+            <textarea name="more" id="more"></textarea>
+          </label>
+        </fieldset>
+
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>
